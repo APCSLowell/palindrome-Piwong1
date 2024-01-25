@@ -43,7 +43,7 @@ public static boolean palindrome(String word)
  return true;
   return false;
 }
-public static String reverse(String str)
+public String reverse(String str)
 {
      String sNew = new String();
     for(int i=str.length();i>0;i--){
@@ -51,10 +51,10 @@ public static String reverse(String str)
   }
     return sNew;
 }
-  public String noCapitals(String sWord){
+  public static String noCapitals(String sWord){
   return sWord.toLowerCase();
 }
-  public String onlyLetters(String sString){
+  public static String onlyLetters(String sString){
   String Let="";
   for(int i=0;i<sString.length();i++){
     if(Character.isLetter(sString.charAt(i))==true)
